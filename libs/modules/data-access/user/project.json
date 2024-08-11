@@ -1,0 +1,9 @@
+{
+    "name": "user-data-access",
+    "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/data-access/user/src",
+    "prefix": "ecommerce",
+    "tags": [],
+    "projectType": "library",
+    "targets": {}
+}
