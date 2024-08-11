@@ -1,9 +1,0 @@
-{
-    "name": "product-cart",
-    "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "modules/feature/product/product-cart/src",
-    "prefix": "ecommerce",
-    "tags": [],
-    "projectType": "library",
-    "targets": {}
-}
