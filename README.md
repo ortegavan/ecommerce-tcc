@@ -31,3 +31,7 @@ Para executar o painel administrativo, utilize o comando:
 ```bash
 nx serve ecommerce-admin
 ```
+
+Para organizar as tarefas do projeto, utilizamos [este quadro no Trello](https://trello.com/b/YTLXlro8/mentoria-angular).
+
+Este projeto foi desenvolvido por [Vanessa Ortega](https://github.com/ortegavan) e [Agemiro Alves](https://github.com/agemiro).
