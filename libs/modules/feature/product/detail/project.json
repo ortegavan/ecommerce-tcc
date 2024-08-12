@@ -5,5 +5,13 @@
     "prefix": "ecommerce",
     "tags": ["type:feature"],
     "projectType": "library",
-    "targets": {}
+    "targets": {
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "options": {
+                "jestConfig": "libs/modules/feature/product/detail/jest.config.ts",
+                "passWithNoTests": true
+            }
+        }
+    }
 }
