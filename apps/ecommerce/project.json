@@ -73,6 +73,13 @@
                 "buildTarget": "ecommerce:build",
                 "staticFilePath": "dist/ecommerce/browser"
             }
+        },
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "options": {
+                "jestConfig": "apps/ecommerce/jest.config.ts",
+                "passWithNoTests": true
+            }
         }
     }
 }
