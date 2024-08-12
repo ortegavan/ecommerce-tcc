@@ -8,8 +8,8 @@ Trata-se de um sistema de e-commerce composto por lista, busca e detalhes de pro
 
 ## Versões publicadas
 
--   Site de e-commerce: (https://mentoria-site.vercel.app)[https://mentoria-site.vercel.app]
--   Painel administrativo: (https://mentoria-admin.vercel.app)[https://mentoria-admin.vercel.app]
+-   Site de e-commerce: [https://mentoria-site.vercel.app](https://mentoria-site.vercel.app)
+-   Painel administrativo: [https://mentoria-admin.vercel.app](https://mentoria-admin.vercel.app)
 
 ## Tecnologias
 
