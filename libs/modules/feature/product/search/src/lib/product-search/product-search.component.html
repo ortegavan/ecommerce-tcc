@@ -1,5 +1,9 @@
 <form class="example-form">
-    <mat-form-field class="example-full-width" subscriptSizing="dynamic">
+    <mat-form-field
+        class="example-full-width"
+        subscriptSizing="dynamic"
+        appearance="outline"
+    >
         <mat-label>Buscar produtos</mat-label>
         <input
             type="text"
@@ -9,6 +13,7 @@
             [formControl]="control"
             [matAutocomplete]="auto"
         />
+        <i class="fa-light fa-magnifying-glass suffix" matSuffix></i>
         <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
             @for (product of products$ | async; track product.id) {
             <mat-option

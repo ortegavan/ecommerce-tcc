@@ -1,7 +1,7 @@
 {
     "{apps,libs}/**/*.{js,ts,jsx,tsx,html}": [
         "nx affected:lint --fix --uncommitted",
-        "nx affected:test --passWithNoTests",
+        "nx affected:test --passWithNoTests=true",
         "nx format:write --uncommited"
     ]
 }

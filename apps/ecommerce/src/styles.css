@@ -10,8 +10,14 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-optical-sizing: auto;
     font-size: 14px;
+    color: #000;
 }
 
-.white {
-    color: white;
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.suffix {
+    margin: 0 16px;
 }
