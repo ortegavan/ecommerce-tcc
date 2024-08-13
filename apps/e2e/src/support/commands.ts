@@ -20,7 +20,7 @@ declare namespace Cypress {
 
 // -- This is a parent command --
 Cypress.Commands.add('login', (email: string, password: string) => {
-    cy.get('a').find('mat-icon[fontIcon="account_circle"]').click();
+    cy.get('button[mat-icon-button][routerLink="/auth"]').click();
 
     cy.get('input[type="email"]').type(email);
 

@@ -4,17 +4,9 @@
     justify-content: space-between;
     height: 60px;
     padding: 20px;
-    background: linear-gradient(to right, rgb(20, 152, 235), rgb(150, 45, 227));
+    border-bottom: solid 1px #dadada;
 }
 
 .header__logo {
     text-decoration: none;
-}
-
-.header__title {
-    color: #fff;
-}
-
-.logo {
-    color: #fff;
 }

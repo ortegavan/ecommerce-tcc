@@ -1,21 +1,19 @@
 import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
 import { LayoutModule } from '@ecommerce/layout';
 import { ProductSearchComponent } from '@ecommerce/product-search';
-import { MatIconModule } from '@angular/material/icon';
 import { CartComponent } from '@ecommerce/product-ui';
 import { CartService } from '@ecommerce/product-data-access';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
     standalone: true,
     imports: [
-        NxWelcomeComponent,
         RouterModule,
         LayoutModule,
         ProductSearchComponent,
-        MatIconModule,
         CartComponent,
+        MatButtonModule,
     ],
     selector: 'ecommerce-root',
     templateUrl: './app.component.html',
