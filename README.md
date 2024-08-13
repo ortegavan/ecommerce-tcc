@@ -6,14 +6,14 @@ Este repositório contém os entregáveis para conclusão da Mentoria Angular Pr
 
 Trata-se de um sistema de e-commerce composto por lista, busca e detalhes de produtos e uma tela de administração de usuários.
 
+## Tecnologias
+
+As aplicações foram criadas utilizando Angular 17, Angular Material e Nx. Trata-se de um monorepo contendo duas aplicações: o site de e-commerce (versão cliente) e um painel administrativo.
+
 ## Versões publicadas
 
 -   Site de e-commerce: [https://mentoria-site.vercel.app](https://mentoria-site.vercel.app)
 -   Painel administrativo: [https://mentoria-admin.vercel.app](https://mentoria-admin.vercel.app)
-
-## Tecnologias
-
-As aplicações foram criadas utilizando Angular 17, Angular Material e Nx. Trata-se de um monorepo contendo duas aplicações: o site de e-commerce (versão cliente) e um painel administrativo.
 
 ## Setup
 
@@ -37,6 +37,14 @@ Para executar o painel administrativo, utilize o comando:
 nx serve ecommerce-admin
 ```
 
+## Desenvolvimento
+
 Para organizar as tarefas do projeto, utilizamos [este quadro no Trello](https://trello.com/b/YTLXlro8/mentoria-angular).
+
+A arquitetura do projeto e suas respectivas bibliotecas estão representadas no diagrama abaixo:
+
+![Diagrama de arquitetura](./docs/diagram.png)
+
+Os itens em rosa foram adicionados ao projeto original para atender aos requisitos do trabalho de conclusão.
 
 Este projeto foi desenvolvido por [Vanessa Ortega](https://github.com/ortegavan) e [Agemiro Alves](https://github.com/agemiro).
