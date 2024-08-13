@@ -1,5 +1,5 @@
 {
-    "{src,modules}/**/*.{js,ts,jsx,tsx,html}": [
+    "{apps,libs}/**/*.{js,ts,jsx,tsx,html}": [
         "nx affected:lint --fix --uncommitted",
         "nx affected:test --passWithNoTests",
         "nx format:write --uncommited"
