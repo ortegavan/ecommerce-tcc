@@ -4,6 +4,14 @@
 
 .product-card-container {
     display: flex;
-    gap: 30px;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
+    margin: 0 auto;
+}
+
+ecommerce-product-card {
+    flex-basis: calc((100% - 64px) / 3);
+    margin-bottom: 32px;
+    box-sizing: border-box;
 }

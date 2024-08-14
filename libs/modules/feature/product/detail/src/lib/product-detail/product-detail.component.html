@@ -3,16 +3,18 @@
         <ng-container *ngIf="product$ | async as product">
             <ecommerce-product-card
                 [product]="product"
+                [showAddToCart]="false"
             ></ecommerce-product-card>
             <div class="product-detail__info">
                 <h2>{{ product.description }}</h2>
                 <p>{{ product.quantity | quantityDescription }}</p>
                 <button
-                    mat-raised-button
+                    mat-flat-button
                     color="primary"
+                    class="btn-primary"
                     (click)="cartService.addToCart(product)"
                 >
-                    Adicionar ao carrinho
+                    <i class="fa-light fa-bag-shopping"></i>Comprar
                 </button>
             </div>
         </ng-container>

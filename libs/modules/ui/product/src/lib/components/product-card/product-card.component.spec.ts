@@ -23,7 +23,7 @@ describe('ProductCardComponent', () => {
 
     it('should render product card info correctly', () => {
         const card: HTMLElement =
-            fixture.nativeElement.querySelector('mat-card');
+            fixture.nativeElement.querySelector('.product-card');
         expect(card.textContent).toContain(component.product.name);
         expect(card.textContent).toContain(component.product.price);
     });

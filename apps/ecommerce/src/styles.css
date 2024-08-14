@@ -7,11 +7,31 @@ body {
 
 body {
     height: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-optical-sizing: auto;
     font-size: 14px;
+    color: #000;
 }
 
-.white {
-    color: white;
+h1,
+h2 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.suffix {
+    margin: 0 16px;
+}
+
+.mdc-button.btn-primary {
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+}
+
+.mdc-button.btn-primary i {
+    margin-right: 8px;
 }
