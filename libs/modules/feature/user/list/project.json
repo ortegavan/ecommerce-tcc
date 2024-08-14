@@ -1,0 +1,17 @@
+{
+    "name": "user-list",
+    "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/feature/user/list/src",
+    "prefix": "ecommerce",
+    "tags": ["type:feature"],
+    "projectType": "library",
+    "targets": {
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "options": {
+                "jestConfig": "libs/modules/feature/user/list/jest.config.ts",
+                "passWithNoTests": true
+            }
+        }
+    }
+}

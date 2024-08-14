@@ -24,7 +24,7 @@
             "@ecommerce/home": ["libs/modules/feature/home/src/index.ts"],
             "@ecommerce/layout": ["libs/modules/feature/layout/src/index.ts"],
             "@ecommerce/product-cart": [
-                "libs/modules/feature/product/product-cart/src/index.ts"
+                "libs/modules/feature/product/cart/src/index.ts"
             ],
             "@ecommerce/product-data-access": [
                 "libs/modules/data-access/product/src/index.ts"
@@ -38,6 +38,12 @@
             "@ecommerce/product-ui": ["libs/modules/ui/product/src/index.ts"],
             "@ecommerce/user-data-access": [
                 "libs/modules/data-access/user/src/index.ts"
+            ],
+            "@ecommerce/user-detail": [
+                "libs/modules/feature/user/detail/src/index.ts"
+            ],
+            "@ecommerce/user-list": [
+                "libs/modules/feature/user/list/src/index.ts"
             ]
         }
     },
