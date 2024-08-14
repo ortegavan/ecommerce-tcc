@@ -1,6 +1,9 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RecommendedProductsService } from '@ecommerce/product-data-access';
+import {
+    CartService,
+    RecommendedProductsService,
+} from '@ecommerce/product-data-access';
 import { ProductCardComponent } from '@ecommerce/product-ui';
 import { LogDirective } from '../directives/log/log.directive';
 
@@ -12,6 +15,7 @@ import { LogDirective } from '../directives/log/log.directive';
     styleUrl: './home.component.css',
 })
 export class HomeComponent {
+    cartService = inject(CartService);
     recommendService = inject(RecommendedProductsService);
     products$ = this.recommendService.getProducts();
 }

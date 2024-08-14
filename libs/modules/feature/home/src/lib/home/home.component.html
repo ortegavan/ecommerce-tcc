@@ -1,14 +1,15 @@
 <main class="home">
     <section>
-        <h2>Produtos recomendados para você</h2>
-
+        <h2>Recomendados para você</h2>
         <div class="product-card-container">
             @for (product of products$ | async; track product.id) {
-            <ecommerce-product-card [product]="product" ecommerceLog />
+            <ecommerce-product-card
+                [product]="product"
+                ecommerceLog
+                (addToCart)="cartService.addToCart($event)"
+            />
             } @empty {
-            <strong
-                >Não temos produtos recomendados para você por enquanto.</strong
-            >
+            <strong>Nenhuma recomendação no momento.</strong>
             }
         </div>
     </section>

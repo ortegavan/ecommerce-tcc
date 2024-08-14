@@ -1,9 +1,20 @@
-<mat-card class="product-card">
-    <img mat-card-image [src]="product.image" [alt]="product.description" />
-    <mat-card-content>
-        <mat-card-title>{{ product.name }}</mat-card-title>
-        <mat-card-subtitle>
-            {{ product.price | currency : 'BRL' }}
-        </mat-card-subtitle>
-    </mat-card-content>
-</mat-card>
+<div class="product-card">
+    <img
+        [src]="product.image"
+        [alt]="product.description"
+        class="product-card__image"
+    />
+    <div class="product-card__info">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.price | currency : 'BRL' }}</p>
+    </div>
+    <button
+        mat-flat-button
+        color="primary"
+        class="btn-primary"
+        (click)="onAddToCart(product, $event)"
+        *ngIf="showAddToCart"
+    >
+        <i class="fa-light fa-bag-shopping"></i>Comprar
+    </button>
+</div>
