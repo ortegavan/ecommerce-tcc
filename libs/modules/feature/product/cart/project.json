@@ -1,0 +1,17 @@
+{
+    "name": "product-cart",
+    "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/feature/product/cart/src",
+    "prefix": "ecommerce",
+    "tags": ["type:feature"],
+    "projectType": "library",
+    "targets": {
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "options": {
+                "jestConfig": "libs/modules/feature/product/cart/jest.config.ts",
+                "passWithNoTests": true
+            }
+        }
+    }
+}

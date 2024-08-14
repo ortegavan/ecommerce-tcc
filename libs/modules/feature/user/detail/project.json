@@ -1,15 +1,15 @@
 {
-    "name": "product-cart",
+    "name": "user-detail",
     "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "libs/modules/feature/product/product-cart/src",
+    "sourceRoot": "libs/modules/feature/user/detail/src",
     "prefix": "ecommerce",
-    "tags": [],
+    "tags": ["type:feature"],
     "projectType": "library",
     "targets": {
         "test": {
             "executor": "@nrwl/jest:jest",
             "options": {
-                "jestConfig": "libs/modules/feature/product/product-cart/jest.config.ts",
+                "jestConfig": "libs/modules/feature/user/detail/jest.config.ts",
                 "passWithNoTests": true
             }
         }
