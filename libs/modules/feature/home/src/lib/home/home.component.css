@@ -15,3 +15,15 @@ ecommerce-product-card {
     margin-bottom: 32px;
     box-sizing: border-box;
 }
+
+@media (max-width: 1024px) {
+    ecommerce-product-card {
+        flex-basis: calc((100% - 32px) / 2);
+    }
+}
+
+@media (max-width: 768px) {
+    ecommerce-product-card {
+        flex-basis: 100%;
+    }
+}

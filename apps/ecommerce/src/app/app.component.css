@@ -3,3 +3,10 @@
     align-items: center;
     gap: 8px;
 }
+
+/* TODO: criar menu hamburger em telas pequenas que contenha a busca */
+@media (max-width: 768px) {
+    ecommerce-product-search {
+        display: none;
+    }
+}
