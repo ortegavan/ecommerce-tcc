@@ -1,4 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    color: #000;
+}
+
+h1,
+h2 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
