@@ -10,7 +10,6 @@
             "executor": "@nrwl/jest:jest",
             "options": {
                 "jestConfig": "libs/modules/data-access/user/jest.config.ts",
-                "tsConfig": "libs/modules/data-access/user/tsconfig.jest.json",
                 "passWithNoTests": true
             }
         }
