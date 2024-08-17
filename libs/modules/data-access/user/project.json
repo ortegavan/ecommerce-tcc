@@ -3,13 +3,14 @@
     "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
     "sourceRoot": "libs/modules/data-access/user/src",
     "prefix": "ecommerce",
-    "tags": [],
+    "tags": ["type:data-access"],
     "projectType": "library",
     "targets": {
         "test": {
             "executor": "@nrwl/jest:jest",
             "options": {
                 "jestConfig": "libs/modules/data-access/user/jest.config.ts",
+                "tsConfig": "libs/modules/data-access/user/tsconfig.jest.json",
                 "passWithNoTests": true
             }
         }
