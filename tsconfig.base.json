@@ -36,6 +36,10 @@
                 "libs/modules/feature/product/search/src/index.ts"
             ],
             "@ecommerce/product-ui": ["libs/modules/ui/product/src/index.ts"],
+            "@ecommerce/shared-data-access": [
+                "libs/modules/data-access/shared/src/index.ts"
+            ],
+            "@ecommerce/shared-ui": ["libs/modules/ui/shared/src/index.ts"],
             "@ecommerce/user-data-access": [
                 "libs/modules/data-access/user/src/index.ts"
             ],
@@ -44,7 +48,8 @@
             ],
             "@ecommerce/user-list": [
                 "libs/modules/feature/user/list/src/index.ts"
-            ]
+            ],
+            "@ecommerce/user-ui": ["libs/modules/ui/user/src/index.ts"]
         }
     },
     "exclude": ["node_modules", "tmp"]

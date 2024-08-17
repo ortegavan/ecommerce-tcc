@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { User } from '../models/user.model';
+import { Sort, Paging } from '@ecommerce/shared-data-access';
 
 @Injectable({
     providedIn: 'root',
@@ -11,7 +12,13 @@ export class UserService {
 
     constructor(private http: HttpClient) {}
 
-    getUsers(): Observable<User[]> {
-        return this.http.get<User[]>(`${this.apiUrl}/users`);
+    getUsers(paging: Paging, sort?: Sort): Observable<User[]> {
+        let requestUrl = `${this.apiUrl}/users?limit=${paging.limit}&page=${paging.page}`;
+
+        if (sort) {
+            requestUrl += `&orderBy=${sort.orderBy}&order=${sort.order}`;
+        }
+
+        return this.http.get<User[]>(requestUrl);
     }
 }

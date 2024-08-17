@@ -1,0 +1,18 @@
+{
+    "name": "shared-data-access",
+    "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/data-access/shared/src",
+    "prefix": "ecommerce",
+    "tags": ["type:data-access"],
+    "projectType": "library",
+    "targets": {
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "options": {
+                "jestConfig": "libs/modules/data-access/shared/jest.config.ts",
+                "tsConfig": "libs/modules/data-access/shared/tsconfig.jest.json",
+                "passWithNoTests": true
+            }
+        }
+    }
+}

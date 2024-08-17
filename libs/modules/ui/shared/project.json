@@ -1,0 +1,17 @@
+{
+    "name": "shared-ui",
+    "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/ui/shared/src",
+    "prefix": "ecommerce",
+    "tags": ["type:ui"],
+    "projectType": "library",
+    "targets": {
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "options": {
+                "jestConfig": "libs/modules/ui/shared/jest.config.ts",
+                "passWithNoTests": true
+            }
+        }
+    }
+}

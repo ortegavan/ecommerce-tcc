@@ -1,0 +1,17 @@
+{
+    "name": "user-ui",
+    "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/ui/user/src",
+    "prefix": "ecommerce",
+    "tags": ["type:ui"],
+    "projectType": "library",
+    "targets": {
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "options": {
+                "jestConfig": "libs/modules/ui/user/jest.config.ts",
+                "passWithNoTests": true
+            }
+        }
+    }
+}

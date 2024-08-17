@@ -26,10 +26,11 @@ describe('UserService', () => {
     });
 
     it('should return users correctly', () => {
-        const url = `${service.apiUrl}/users`;
+        const url = `${service.apiUrl}/users?limit=10&page=1`;
+        const paging = { limit: 10, page: 1, total: 10 };
         let result: User[] = [];
 
-        service.getUsers().subscribe((users) => (result = users));
+        service.getUsers(paging).subscribe((users) => (result = users));
 
         const request = httpMock.expectOne(url);
         request.flush(mockUsers);
