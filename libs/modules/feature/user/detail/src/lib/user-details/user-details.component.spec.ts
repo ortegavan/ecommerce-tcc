@@ -6,13 +6,18 @@ import { mockUsers } from '@ecommerce/user-data-access';
 describe('UserDetailsComponent', () => {
     let component: UserDetailsComponent;
     let fixture: ComponentFixture<UserDetailsComponent>;
+    let dialogRefMock: Partial<MatDialogRef<UserDetailsComponent>>;
 
     beforeEach(async () => {
+        dialogRefMock = {
+            close: jest.fn(),
+        };
+
         await TestBed.configureTestingModule({
             imports: [UserDetailsComponent],
             providers: [
                 { provide: MAT_DIALOG_DATA, useValue: mockUsers[0] },
-                { provide: MatDialogRef, useValue: {} },
+                { provide: MatDialogRef, useValue: dialogRefMock },
             ],
         }).compileComponents();
 
@@ -23,5 +28,10 @@ describe('UserDetailsComponent', () => {
 
     it('should create', () => {
         expect(component).toBeTruthy();
+    });
+
+    it('should call dialogRef.close when close method is executed', () => {
+        component.close();
+        expect(dialogRefMock.close).toHaveBeenCalled();
     });
 });
