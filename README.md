@@ -1,6 +1,6 @@
 # e-Commerce & Admin
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/ortegavan/ecommerce-tcc/ci.yml) ![GitHub last commit](https://img.shields.io/github/last-commit/ortegavan/ecommerce-tcc) ![Static Badge](https://img.shields.io/badge/code_style-prettier-ff69b4)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/ortegavan/ecommerce-tcc/ci.yml) ![GitHub last commit](https://img.shields.io/github/last-commit/ortegavan/ecommerce-tcc) ![GitHub contributors](https://img.shields.io/github/contributors/ortegavan/ecommerce-tcc?color=54C92D) ![Static Badge](https://img.shields.io/badge/code_style-prettier-ff69b4)
 
 Este repositório contém os entregáveis para conclusão da Mentoria Angular Pro 2.0 de Andrew Rosário e Paolo Almeida.
 
