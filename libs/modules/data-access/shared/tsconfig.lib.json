@@ -13,9 +13,5 @@
         "jest.config.ts",
         "src/**/*.test.ts"
     ],
-    "include": [
-        "src/**/*.ts",
-        "../shared/src/lib/models/paging.model.ts",
-        "../shared/src/lib/models/sort.model.ts"
-    ]
+    "include": ["src/**/*.ts"]
 }

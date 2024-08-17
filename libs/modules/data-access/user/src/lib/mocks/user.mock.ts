@@ -8,7 +8,7 @@ export const mockUsers: User[] = [
         email: 'Jaydon44@gmail.com',
         biography:
             'Dicta quaerat nemo repellendus adipisci. Hic iusto similique sint. Voluptate quam minus aliquam maiores tenetur excepturi. Itaque doloribus unde accusantium corporis possimus. Accusantium voluptatum consequuntur.',
-        id: '1',
+        id: 1,
     },
     {
         createdAt: '2024-03-04T20:46:04.785Z',
@@ -17,7 +17,7 @@ export const mockUsers: User[] = [
         email: 'Stella35@hotmail.com',
         biography:
             'Quia minima sunt deleniti. Dicta optio voluptate repellat similique velit. Vitae odio corrupti mollitia repellat vel eligendi dolor vel quo.',
-        id: '2',
+        id: 2,
     },
     {
         createdAt: '2024-03-04T16:28:28.886Z',
@@ -26,7 +26,7 @@ export const mockUsers: User[] = [
         email: 'Isobel8@gmail.com',
         biography:
             'Quam laudantium eius voluptates. Dolores temporibus delectus. Corporis id consectetur iure hic dolores labore minima. Vel optio incidunt tenetur odit. Similique ipsum facilis ipsam esse asperiores aliquid doloremque eveniet. Facilis non nesciunt nemo qui unde repellendus quam pariatur cupiditate.',
-        id: '3',
+        id: 3,
     },
     {
         createdAt: '2024-03-04T11:32:14.418Z',
@@ -35,7 +35,7 @@ export const mockUsers: User[] = [
         email: 'Broderick.Kling@yahoo.com',
         biography:
             'Consectetur ut suscipit debitis nemo praesentium soluta repellat veritatis. Nihil excepturi atque ab veniam necessitatibus quae. Assumenda dolorem dicta aut ex tempora cumque voluptatibus.',
-        id: '4',
+        id: 4,
     },
     {
         createdAt: '2024-03-04T17:02:16.498Z',
@@ -44,6 +44,6 @@ export const mockUsers: User[] = [
         email: 'Melissa.Ankunding47@yahoo.com',
         biography:
             'Voluptatem cupiditate est error fugiat perferendis assumenda laudantium accusamus perspiciatis. Totam consectetur debitis rem modi odit omnis. Illum minima rem ut in porro ducimus eligendi. Error inventore architecto aspernatur neque commodi voluptatem.',
-        id: '5',
+        id: 5,
     },
 ];

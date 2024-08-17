@@ -1,7 +1,7 @@
 {
-    "name": "user-data-access",
+    "name": "shared-data-access",
     "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "libs/modules/data-access/user/src",
+    "sourceRoot": "libs/modules/data-access/shared/src",
     "prefix": "ecommerce",
     "tags": ["type:data-access"],
     "projectType": "library",
@@ -9,7 +9,7 @@
         "test": {
             "executor": "@nrwl/jest:jest",
             "options": {
-                "jestConfig": "libs/modules/data-access/user/jest.config.ts",
+                "jestConfig": "libs/modules/data-access/shared/jest.config.ts",
                 "passWithNoTests": true
             }
         }

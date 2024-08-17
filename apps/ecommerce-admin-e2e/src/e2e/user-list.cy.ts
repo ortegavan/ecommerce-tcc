@@ -3,7 +3,6 @@ describe('user list page', () => {
 
     it('should show the page with the list of registered users', () => {
         cy.get('h1').contains('e-Commerce Admin');
-
-        cy.get('h2').contains('Usuários registrados');
+        cy.get('h2').contains('Usuários cadastrados');
     });
 });

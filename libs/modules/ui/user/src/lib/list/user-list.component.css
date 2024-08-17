@@ -1,0 +1,7 @@
+th {
+    font-weight: bold;
+}
+
+th:not(:last-child) {
+    width: 23%;
+}
