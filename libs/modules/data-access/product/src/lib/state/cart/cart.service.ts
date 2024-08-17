@@ -1,6 +1,6 @@
 import { Injectable, computed, signal } from '@angular/core';
 import { Product } from '../../models/product.model';
-import { BehaviorSubject, map } from 'rxjs';
+// import { BehaviorSubject, map } from 'rxjs';
 
 @Injectable({
     providedIn: 'root',
