@@ -18,3 +18,16 @@ jobs:
             - run: npx nx affected -t lint --parallel=3
             - run: npx nx affected -t test --parallel=3 --configuration=ci
             - run: npx nx affected -t build --parallel=3
+            - name: Install Xvfb and Cypress Dependencies
+              run: |
+                  sudo apt-get install -y xvfb libgtk2.0-0 libgconf-2-4 libnss3
+            - name: Start Xvfb
+              run: Xvfb :99 -screen 0 1280x720x24 &
+            - name: Run e2e tests for ecommerce-admin-e2e
+              env:
+                  DISPLAY: :99
+              run: npx nx run ecommerce-admin-e2e:e2e --verbose
+            - name: Run e2e tests for ecommerce-e2e
+              env:
+                  DISPLAY: :99
+              run: npx nx run e2e:e2e
