@@ -1,6 +1,6 @@
 # e-Commerce & Admin
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/ortegavan/ecommerce-tcc/ci.yml) ![GitHub last commit](https://img.shields.io/github/last-commit/ortegavan/ecommerce-tcc) ![GitHub contributors](https://img.shields.io/github/contributors/ortegavan/ecommerce-tcc?color=54C92D) ![Static Badge](https://img.shields.io/badge/code_style-prettier-ff69b4)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/ortegavan/ecommerce-tcc/ci.yml) ![GitHub last commit](https://img.shields.io/github/last-commit/ortegavan/ecommerce-tcc) ![GitHub contributors](https://img.shields.io/github/contributors/ortegavan/ecommerce-tcc?color=54C92D) ![GitHub Tag](https://img.shields.io/github/v/tag/ortegavan/ecommerce-tcc?color=54C92D) ![Static Badge](https://img.shields.io/badge/code_style-prettier-ff69b4)
 
 Este repositório contém os entregáveis para conclusão da Mentoria Angular Pro 2.0 de Andrew Rosário e Paolo Almeida.
 
@@ -45,6 +45,14 @@ A arquitetura do projeto e suas respectivas bibliotecas estão representadas no 
 
 ![Diagrama de arquitetura](./docs/diagram.png)
 
-Os itens em rosa foram adicionados ao projeto original para atender aos requisitos do trabalho de conclusão.
+Os itens em rosa foram adicionados ao projeto original para atender aos requisitos do trabalho de conclusão. São eles:
+
+-   user-data-access: biblioteca para acesso a dados de usuários
+-   shared-data-access: models de definição da paginação e ordenação de listas
+-   user-list: componente para listagem de usuários
+-   user-details: componente para detalhes de usuários
+-   user-ui: componentes de interface para tabela de usuários e view de perfil de usuário
+-   shared-ui: contém a tradução para português do paginator do Angular Material
+-   ecommerce-admin: aplicação com o painel administrativo
 
 Este projeto foi desenvolvido por [Vanessa Ortega](https://github.com/ortegavan) e [Agemiro Alves](https://github.com/agemiro).
