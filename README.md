@@ -55,4 +55,8 @@ Os itens em rosa foram adicionados ao projeto original para atender aos requisit
 -   shared-ui: contém a tradução para português do paginator do Angular Material
 -   ecommerce-admin: aplicação com o painel administrativo
 
+Este projeto utiliza [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/):
+
+![Conventional Commits](./docs/commits.png)
+
 Este projeto foi desenvolvido por [Vanessa Ortega](https://github.com/ortegavan) e [Agemiro Alves](https://github.com/agemiro).
