@@ -1,5 +1,8 @@
 describe('user list page', () => {
-    beforeEach(() => cy.visit('/'));
+    beforeEach(() => {
+        cy.visit('/');
+        cy.login('mail@mail.com', '123456');
+    });
 
     it('should show the header of the page', () => {
         cy.get('h1').contains('e-Commerce Admin');
