@@ -6,7 +6,17 @@
     >
         <i class="fa-light fa-xmark"></i>
     </button>
-    <img [src]="user.avatar" alt="avatar" class="user-details__avatar" />
+    <img
+        *ngIf="!imageError"
+        [src]="user.avatar"
+        alt="avatar"
+        class="user-details__avatar"
+        (error)="onImageError()"
+    />
+    <i
+        *ngIf="imageError"
+        class="fa-light fa-user user-details__avatar user-details__avatar-error"
+    ></i>
     <h2>{{ user.name }}</h2>
     <p>{{ user.email }}</p>
     <p class="user-details__bio">{{ user.biography }}</p>
