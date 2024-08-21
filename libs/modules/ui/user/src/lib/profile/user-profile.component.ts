@@ -13,4 +13,10 @@ import { MatButtonModule } from '@angular/material/button';
 export class UserProfileComponent {
     @Input() user!: User;
     @Output() dismiss = new EventEmitter<void>();
+
+    imageError = false;
+
+    onImageError() {
+        this.imageError = true;
+    }
 }
